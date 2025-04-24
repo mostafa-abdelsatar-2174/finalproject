@@ -2125,37 +2125,44 @@ footer{
 @media screen and (max-width:599px) {
     #header{
         justify-content: space-between;
+        align-items: start;
         /* gap: 7%; */
         /* background-color: violet; */
         /* height: 10vh; */
         .items{
-            justify-content: start;
-            /* gap: 2%; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10%;
             /* background-color: white; */
-            width: 75%;
+            width: 70%;
             height: 50%;
         }
         img{
             /* background-color: #0000001d; */
-            width: 25%;
-            margin: 0 ;
+            width: 30%;
+            margin:3% 0 ;
         }
         .elem{
             padding: 0;
             margin: 0;
-            width: 75%;
+            width: 100%;
             font-size: .65em;
             flex-wrap: wrap;
-            align-content: center;
-            align-items: center;
+            align-self: flex-start;
+            justify-self: start;
             justify-content: center;
+            align-items: center;
         }
         li{
             /* background-color: wheat; */
             padding: 0 2px;
+            &:first-child{
+                padding-left: 0;
+            }
         }
         .but{
-            width: 25%;
+            width: 30%;
             font-size: .7em;
         }
     }
